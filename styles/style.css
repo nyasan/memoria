@@ -55,8 +55,9 @@ body {
 
 #navegador {
 	float: left;
-	width: 20%;
+	width: 0px;
 	margin-left: 15px;
+	border:0;
 }
 
 #navegador input {
