@@ -19,7 +19,7 @@
 		<script type="text/javascript" src="scripts/timeline.eventos.js"></script>
         <script type="text/javascript" src="scripts/timeline.regla.js"></script>    
 		<script type="text/javascript" src="scripts/timeline.linea.js"></script>   
-    	<script type="text/javascript" src="jquery-2.0.3.js"></script>
+    	
 		<script type="text/javascript">
 			function validarEnter(e) {
 			enter = (document.FechaNavegar) ? e.keyCode : e.which; /* ? es una versión abreviada del if. Si se cumple la condición toma el valor que hay entre el signo de interrogación y los dos puntos, si no se cumple, toma el valor que hay a continuación de los dos puntos. David */
@@ -36,13 +36,15 @@
 		</script>
 	</head>
 	
-	<body>        
+	<body>   
+	<div id="contenedorbusqueda">     
         <div id="navegador">
-        	<input id="FechaNavegar" type="text" maxlength="10" onkeypress="validarEnter(event)" Style="width:0px;border:0;" />
+        	<input id="FechaNavegar" type="text" maxlength="10" onkeypress="validarEnter(event)"  />
         </div>
 	<div><a id="botonBuscar" href="javascript:Regla.navegar()" ><img src="images/iconos/ir-a.png" title="Ir a..."></a></div>
+	</div>
                 
-	<script>
+	 <script>
 		$("#botonBuscar").mouseover(function () {
 			$("#navegador").animate({
 		            "width" : "200px"
@@ -53,7 +55,7 @@
 			$("#botonBuscar").fadeOut("fast");
 		});
  
-	</script>
+	</script> 
 				
 				
     	<div id="timeline-comandos">

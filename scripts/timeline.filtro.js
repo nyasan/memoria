@@ -39,18 +39,21 @@ var Filtros = {
 		);	
 		});*/	
 	
-		$('#filtros a:last').toggle(
+		$('#filtros a:last').click(
 			function () {
-				Filtros.$contenedor.slideUp();	
-			},
-			function () {						
-				Filtros.$contenedor.slideDown();	
+				Filtros.$contenedor.fadeToggle('slow');	
+				$('#filtros a:last').fadeToggle('slow');
 			}
+		
 		);
 		
 		// Asigno los handlers a los eventos click de los botones Generar y Agregar
 		$('#btnAgregarFiltro').click(Filtros.agregarFiltro);		
-		$('#btnGenerarLineas').click(Filtros.generarLineas);
+		$('#btnGenerarLineas').click(Filtros.generarLineas,
+					function(){
+						Filtros.$contenedor.fadeOut('slow');	
+						$('#filtros a:last').fadeIn('slow');				
+					});
 	}, 
 	
 	// Añade un nuevo filtro a la vista previa dentro del panel de filtros

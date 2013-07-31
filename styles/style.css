@@ -52,11 +52,17 @@ body {
 #timeline-lineas .categoria-historia { background-position: -210px 0 !important; }
 
 /* NAVEGADOR */
-
+#contenedorbusqueda{
+width: 300;
+height: auto;
+float:left;
+margin-left: 15px;
+margin-top: 15px;
+}
 #navegador {
-	float: left;
+	/*float: left;*/
 	width: 0px;
-	margin-left: 15px;
+	/*	margin-left: 15px;*/
 	border:0;
 }
 
@@ -65,12 +71,19 @@ body {
     font-size: 1.5em;
     height: 45px;
     margin: 0;
-    width: 140px;
+    width: 0px;
+	border:0px;
 	text-align: center;
 	margin-top: 10px;
 	color: #70777d;
 }
 
+#botonBuscar {
+	float: left;
+	/*margin-left: 15px;
+	margin-top: 15px;*/
+	border:0;
+}
 /* FILTROS */
 
 #filtros {
@@ -95,6 +108,8 @@ body {
     padding: 1%;
     width: 78%;
 	clear: both;
+	position: absolute;
+	z-index: 1
 }
 
 #filtros-panel h2 {
@@ -152,12 +167,16 @@ body {
 	clear: both;
 	margin-top: 25px;
 	overflow: hidden;
+	position: relative;
+	box-shadow: 5px 5px 5px #000;
+   -webkit-box-shadow: 5px 5px 5px #000;
 }
 
 #timeline-regla {
 	position: relative;
 	height: 100%;
-	border: 2px solid #EEEEEE;
+	/* border: 2px solid #EEEEEE; */
+	
 	
 }
 
