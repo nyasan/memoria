@@ -1,0 +1,356 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Extracción de datos de Wikipedia a JSON</title>
+   <script type="text/javascript" src="/scripts/jquery-1.7.1.min.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function() {
+var obj = {
+   "head": {
+       "link": [],
+       "vars": [
+           "eventos",
+           "Introduccion"
+       ]
+   },
+   "results": {
+       "distinct": false,
+       "ordered": true,
+       "bindings": [
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/United_Provinces_of_the_R%C3%ADo_de_la_Plata"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "Provincias Unidas del Río de la Plata es el más recurrente de los nombres utilizados por el estado surgido en la Revolución de Mayo de 1810 en Buenos Aires para suplantar al virreinato del Río de la Plata. Aunque ese estado pretendía tomar el control de todo el territorio del virreinato, debió aceptar la temprana separación de la provincia del Paraguay y el resto de su territorio efectivo varió según los vaivenes de la guerra de la independencia, de las guerras contra los luso-brasileños, y de los conflictos internos, guerras que dieron lugar a la separación de los territorios del Alto Perú y de la Banda Oriental, que formaron los estados de Bolivia y Uruguay. Tras superar períodos de anarquía y guerras civiles las 13 provincias que todavía integraban esta unión entre 1831 y 1832 se agruparon en lo que se denomina Confederación Argentina. El nombre Provincias Unidas del Río de la Plata fue recogido por la Constitución Nacional Argentina de 1853 como uno de los tres nombres oficiales del Estado, junto con República Argentina y Confederación Argentina, permaneciendo en la constitución actualmente vigente en su artículo 35°."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Rise_of_the_Republic_of_Argentina"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "Se conoce como el surgimiento del Estado Argentino al período de la historia de la Argentina durante el cual la autoridad de la monarquía española llega a su fin en el virreinato del Río de la Plata, el cual se disgrega en diversas unidades políticas y se produce la conformación jurídico-política de lo que hoy es la República Argentina. Con el primer antecedente en las invasiones inglesas, este proceso se inicia propiamente con la Revolución de Mayo y culmina con la sanción de la Constitución Nacional en 1853."
+               }
+           },
+           {
+              "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/May_Revolution"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "Se conoce como Revolución de Mayo a la serie de acontecimientos revolucionarios ocurridos en mayo de 1810 en la ciudad de Buenos Aires, por aquel entonces capital del Virreinato del Río de la Plata, una dependencia colonial de España. Como consecuencia de la revolución fue depuesto el virrey Baltasar Hidalgo de Cisneros y reemplazado por la Primera Junta de Gobierno. Estos eventos de la Revolución de Mayo se sucedieron en una semana conocida como la Semana de Mayo, que transcurrió entre el 18 de mayo, cuando se confirmó de manera oficial la caída de la Junta de Sevilla, hasta el 25 de mayo, fecha de asunción de la Primera Junta. La Revolución de Mayo inició el proceso de surgimiento del Estado Argentino sin proclamación de la independencia formal, ya que la Primera Junta no reconocía la autoridad del Consejo de Regencia de España e Indias, pero aún gobernaba nominalmente en nombre del rey de España Fernando VII, quien había sido depuesto por las Abdicaciones de Bayona y su lugar ocupado por el francés José Bonaparte. Aun así, los historiadores consideran a dicha manifestación de lealtad (conocida como la máscara de Fernando VII) una maniobra política que ocultaba las intenciones independentistas de los revolucionarios. La declaración de independencia de la Argentina tuvo lugar posteriormente durante el Congreso de Tucumán el 9 de julio de 1816."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Army_of_the_North"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "El Ejército del Norte, denominado en los documentos de su época Ejército del Perú, fue uno de los cuerpos militares desplegados por las Provincias Unidas del Río de la Plata en la Guerra de Independencia de la Argentina. Este ejército fue el encargado de actuar, bajo el mando, entre otros de Manuel Belgrano, en la región noroeste de la actual República Argentina y el Alto Perú, en donde se desarrolló uno de los principales frentes de batalla contra los realistas fieles a la corona de España. Su acción en el frente independentista comenzó en 1810 y concluyó en 1817, con la derrota de las fuerzas comandadas por Gregorio Aráoz de La Madrid en la batalla de Sopachuy, en un último intento de avanzar sobre el Alto Perú. A partir de allí las acciones ofensivas finalizaron, manteniéndose sólo en situación defensiva. La ofensiva ya había sido trasladada al Ejército de los Andes, comandado por José de San Martín, que concibió la idea de llegar por mar hasta Lima, el principal bastión realista, tras liberar Chile. El Ejército del Norte, nuevamente al mando de Belgrano, fue llamado para intervenir en las luchas internas suscitadas por el conflicto entre el gobierno central con sede en Buenos Aires y los caudillos federales del Litoral. El Motín de Arequito, causado por la renuencia de los veteranos del frente independentista a comprometerse en luchas intestinas, puso fin a su existencia. La Expedición Libertadora al Paraguay comandada por Belgrano llevó antes el nombre de Ejército del Norte, pasando luego, tras su fracaso militar, a ser conocido así el que actuaba en el Alto Perú. Durante la Guerra contra la Confederación Perú-Boliviana, un nuevo cuerpo militar recibió el nombre de Ejército del Norte 1837 al mando de Alejandro Heredia, desapareciendo de nuevo tras su asesinato en 1838 al estallar la rebelión conocida como Coalición del Norte, finalizando la guerra en 1839 con la victoria chilena en Yungay y el retiro de los peruano-bolivianos del territorio argentino. Artículo principal: Expediciones Auxiliadoras al Alto Perú."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Lautaro_Lodge"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "La Logia Lautaro fue una organización latinoamericana de la Gran Reunión Americana, también conocida como Logia de los Caballeros Racionales o Logia Lautarina, fundada por Francisco de Miranda en el año 1797 en Londres."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Jujuy_Exodus"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "Se denomina Éxodo Jujeño a la retirada hacia Tucumán emprendida por el Ejército del Norte, comandado por el general Manuel Belgrano en la vanguardia y el mayor general Eustoquio Díaz Vélez en la retaguardia, y la población de San Salvador de Jujuy que evacuó la ciudad completa y sus campos. Tuvo lugar el 23 de agosto de 1812, ante el avance de las tropas realistas provenientes desde el Alto Perú. El rigor de la medida debió respaldarse con la amenaza de fusilar a quienes no cumplieran la orden."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/First_Triumvirate_(Argentina)"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "El Primer Triunvirato fue el órgano ejecutivo que reemplazó a la Junta Grande y gobernó las Provincias Unidas del Río de la Plata entre el 23 de septiembre de 1811 y el 8 de octubre de 1812. Originalmente, estaba formado por Feliciano Chiclana, Manuel de Sarratea y Juan José Paso."
+               }
+           },
+          {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Argentine_Declaration_of_Independence"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "La declaración de independencia de la Argentina fue una decisión tomada por el Congreso de Tucumán que sesionó en la ciudad de San Miguel de Tucumán de las entonces Provincias Unidas en Sudamérica. Fue proclamada el martes 9 de julio de 1816 en la casa propiedad de Francisca Bazán de Laguna, casa declarada Monumento Histórico Nacional en 1941. Con dicha declaración, se rompían los vínculos de dependencia política que los gobiernos locales tenían con la monarquía española."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Liniers_Counter-revolution"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "La contrarrevolución de Córdoba tuvo su inicio cuando las autoridades de la Intendencia de Córdoba del Tucumán y el ex virrey del Río de la Plata, Santiago de Liniers, tomaron conocimiento de que había ocurrido la Revolución de Mayo en Buenos Aires, por lo que se dedicaron a organizar en Córdoba un ejército para rechazar la expedición militar enviada por la Primera Junta para hacer reconocer su autoridad en las provincias del interior del ex Virreinato del Río de la Plata. El fracaso de la contrarrevolución encabezada por Liniers culminó con su fusilamiento y el completo control del noroeste de la actual Argentina por la Junta de Buenos Aires."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Operations_plan"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "El Plan de Operaciones es un documento atribuido a Mariano Moreno, que detallaría en forma secreta las operaciones que la Primera Junta, surgida tras la Revolución de Mayo, tomaría para protegerse de sus enemigos partidarios de la monarquía española. La autenticidad del documento es cuestionada por algunos historiadores, que sospechan que podría tratarse de una falsificación literaria, mientras otros sostienen la autenticidad del documento, sino en su redaccion actual, en lineas generales como programa de gobierno revolucionario."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Primera_Junta"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "Se conoce con el nombre de Primera Junta de Gobierno, oficialmente la «Junta Provisional Gubernativa de las Provincias del Río de la Plata a nombre del Señor Don Fernando VII», a una Junta de gobierno surgida en Buenos Aires el viernes 25 de mayo de 1810. Tuvo lugar tras la destitución del virrey Baltasar Hidalgo de Cisneros, como consecuencia de la Revolución de Mayo. La sede del gobierno fue fijada en el Fuerte de Buenos Aires, que sirviera desde 1776 como residencia de los virreyes y donde hoy se encuentra la Casa de Gobierno. La Primera Junta existió como tal hasta el 18 de diciembre del mismo año, ya que con la incorporación de diputados del interior se transformó en la Junta Grande. Los principios que proclamó la Revolución de Mayo y por los cuales se guio el accionar de la Primera Junta fueron los de la soberanía popular, el principio representativo y federal, la división de poderes y duración de los mandatos, y la publicidad de los actos de gobierno."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Maitland_Plan"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "El general escocés Thomas Maitland diseñó en el año 1800 un \"Plan para capturar Buenos Aires y Chile y luego emancipar Perú y Quito\". En síntesis los puntos principales de este plan consistían en: Ganar el control de Buenos Aires. Tomar posiciones en Mendoza. Coordinar las acciones con un ejército libertador en Chile. Cruzar los Andes. Derrotar a los españoles y controlar Chile. Continuar por mar hacia Perú y liberarlo. José de San Martín pudo haber conocido los pormenores de este plan, durante su estadía en Londres, en 1811. Esta teoría es avalada por Rodolfo Terragno en su libro \"Maitland & San Martín\" editado por la Universidad Nacional de Quilmes. Junto con esta afirmación, Terragno aclara que el gran mérito de San Martín fue y será el haber ejecutado dicho plan."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Arequito_Revolt"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "El Motín de Arequito, fue la sublevación de los oficiales del Ejército del Norte de las Provincias Unidas del Río de la Plata, mediante la cual consiguieron apartarse de la guerra civil contra los federales. Su intención era retornar al frente contra los realistas del Alto Perú, objetivo que no pudo cumplirse. Significó el comienzo de la desintegración final del Directorio y fue una de las principales causas de su derrota en la Batalla de Cepeda. El motín puso fin al Ejército Auxiliar del Perú, conocido después como Ejército del Norte. Simultáneamente, en San Juan se sublevó el Regimiento N° 1 de Cazadores de los Andes."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Supreme_Director_of_the_United_Provinces_of_the_R%C3%ADo_de_la_Plata"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "El Directorio fue la forma de gobierno establecida en 31 de enero de1814 por la Asamblea del Año XIII para las Provincias Unidas del Río de la Plata, de acuerdo al cual un Director Supremo se hacía cargo del poder ejecutivo con un mandato de dos años. Tenía el título oficial de Director Supremo de las Provincias Unidas del Río de la Plata. A diferencia de los gobiernos que tuvieron lugar tras la Revolución de Mayo la autoridad era ejercida por un individuo específico en lugar de un grupo, pero aún no tenía las características propias de un sistema presidencial. La Asamblea procuraba así hacer frente a la amenaza realista, agravada por enfrentamientos internos en el bando patriota. Con el fin de evitar los abusos de poder, el Directorio debía estar integrado además por un Consejo de Estado compuesto por 9 personas, y responder ante un Congreso destinado a ejercer funciones legislativas."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Congress_of_Tucum%C3%A1n"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "El Congreso de Tucumán fue una asamblea legislativa y constituyente de las Provincias Unidas del Río de la Plata, actualmente la República Argentina, que sesionó – inicialmente en la ciudad de San Miguel de Tucumán, y posteriormente en la de Buenos Aires – entre los años 1816 y 1820. Se lo recuerda especialmente por haber sancionado la Declaración de independencia de la Argentina y la Constitución Argentina de 1819."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Flag_of_the_Andes"
+               },
+              "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "La bandera de la Provincia de Mendoza, en Argentina, fue adoptada el 21 de octubre de 1992 por la ley provincial 5.930. La misma es una reproducción fiel, en caracteres, colores y dimensiones, de la bandera del Ejército de Los Andes, diseñada por el propio José de San Martín con motivo de las expediciones libertadoras a Chile y Perú."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Second_Triumvirate_(Argentina)"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "El Segundo Triunvirato fue el órgano ejecutivo de gobierno, que reemplazó al Primer Triunvirato y condujo entre 1812 y 1814 los destinos de las Provincias Unidas del Río de la Plata."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Gazeta_de_Buenos_Ayres"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "La Gazeta de Buenos Ayres fue un periódico escrito en Buenos Aires, Argentina, entre 1810 y 1821 con el objetivo inicial de publicitar los actos de gobierno de la Primera Junta. Inicialmente fue redactada por Mariano Moreno con la ayuda del sacerdote Manuel Alberti, y contó también con colaboraciones de Manuel Belgrano y Juan José Castelli."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Assembly_of_the_Year_XIII"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "La Asamblea del Año XIII, también conocida como la Asamblea General Constituyente del Año 1813, fue convocada por el Segundo Triunvirato, en las Provincias Unidas del Río de la Plata, que había accedido al poder en octubre de 1812. El objetivo fue llamar a una Asamblea que representase a los pueblos recién emancipados y que se definiese el sistema institucional de las Provincias Unidas. Aunque no logró contar con algunos representantes del interior, esta Asamblea se inauguró el 31 de enero de 1813. El propósito era proclamar la independencia y redactar la constitución del nuevo estado. Durante su transcurso, los intereses sectoriales dividieron a los diputados, lo que terminó con una postergación de la declaración de la independencia. No obstante, durante esta Asamblea se establecieron una serie de resoluciones importantes."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Junta_Grande"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "La Junta Grande fue el gobierno ejecutivo que se creó en las Provincias Unidas del Río de la Plata el 18 de diciembre de 1810 a partir de la Primera Junta, con la incorporación de los diputados provenientes de las provincias que integraron el ex Virreinato del Río de la Plata. El 18 de diciembre de 1810 se celebró una reunión entre los 7 integrantes de la Primera Junta que se hallaban en Buenos Aires y los 9 diputados de las provincias que habían llegado a la capital, en esa reunión conjunta 13 (Saavedra, Azcuénaga, Alberti, Matheu, Larrea, Manuel Ignacio Molina, Tarragona, García de Cossio, Gurruchaga, Manuel Felipe Molina, Funes, Pérez de Echalar, Olmos de Aguilera y Gorriti) votaron por la incorporación de los diputados a la Junta mientras que Moreno y Paso votaron en contra. La renuncia de Mariano Moreno no fue aceptada y al día siguiente se prestó juramento quedando constituida la Junta Grande que gobernó hasta el 22 de septiembre de 1811, cuando fue reemplazada por un golpe institucional encabezado por el Primer Triunvirato, que volvería a las tendencias centralistas de la Primera Junta."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Argentine_War_of_Independence"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "Se denomina Guerra de Independencia de la Argentina o de las Provincias Unidas del Río de la Plata al conjunto de combates y campañas militares ocurridos en el marco de las guerras de independencia hispanoamericanas en diversos países de América del sur, en los que participaron fuerzas militares de las Provincias Unidas del Río de la Plata, un estado que sucedió al Virreinato del Río de la Plata y que antecedió a la República Argentina. Los bandos enfrentados suelen ser identificados como patriotas y realistas, ya que se trató de un enfrentamiento entre quienes defendían la independencia de su patria y la creación de los nuevos estados americanos, y aquellos que defendían la continuidad de sus territorios (provincias o reinos) dentro de la monarquía española del rey Fernando VII Sólo una parte menor de estos enfrentamientos tuvo lugar en el territorio de la actual Argentina. La mayoría ocurrió en los territorios del antiguo Virreinato del Río de la Plata que al finalizar la guerra quedaron fuera de las Provincias Unidas, o en otras regiones de América del Sur que nunca pertenecieron a ese virreinato, tales como Chile, Perú y Ecuador. No obstante, en todos los casos se considera que los bandos enfrentados luchaban no solamente por la situación en esos territorios, sino también por la soberanía nacional sobre el territorio que había pertenecido al Virreinato del Río de la Plata. También hubo enfrentamientos en el mar, en algunos casos en aguas muy alejadas del continente americano. Se pueden distinguir tres frentes militares principales: el frente oriental o del litoral, sobre los ríos de la cuenca del Plata, que incluye las campañas en el Paraguay, la Banda Oriental, la Mesopotamia argentina y los combates navales en el Río de la Plata y sus afluentes; el frente norte, con enfrentamientos en las provincias del Alto Perú y la Intendencia de Salta del Tucumán; y el frente de los Andes, que incluye la acción ofensiva sobre posiciones realistas en Chile, Perú y Ecuador. La guerra duró quince años y terminó con la victoria de los independentistas, que lograron consolidar la Independencia de la Argentina y colaboraron en la de otros países de América del Sur."
+               }
+           },
+           {
+               "eventos": {
+                   "type": "uri",
+                   "value": "http://dbpedia.org/resource/Regiment_of_Artillery_of_the_Nation"
+               },
+               "Introduccion": {
+                   "type": "literal",
+                   "xml:lang": "es",
+                   "value": "Regimiento de Artillería de la Patria es el nombre que fue dado al Real Cuerpo de Artillería de las Provincias Unidas del Río de la Plata el 2 de marzo de 1812. Durante toda su existencia este regimiento fue la única unidad de artillería del gobierno nacional de las Provincias Unidas del Río de la Plata. Participó en la Guerra de Independencia de la Argentina, destacando piquetes y compañías en los diversos frentes, pero manteniéndose su jefatura en Buenos Aires, hasta su disolución en 1820 luego del Motín de Arequito."
+               }
+           }
+       ]
+   }
+};
+var arreglo= obj.results.bindings;
+//arreglo.splice (0,1); //elimina un objeto de la lista de hechos.
+//$('div').html(obj.test.key1); //muestra el valor de una key en particular
+
+for(var i=0; i< arreglo.length; i++){ 
+delete arreglo[i].eventos; //elimina "eventos" de cada objeto del arreglo
+delete arreglo[i].Introduccion.type; //elimina type" de cada objeto del arreglo
+delete arreglo[i].Introduccion["xml:lang"]; //elimina "xml:lang" de cada objeto del arreglo
+arreglo[i].Introduccion["fecha"]= formatDate(getRandomDate()); //agrego key "fecha"
+arreglo[i].Introduccion["fechaCreacion"]= today; //agrego key "fechaCreacion"
+arreglo[i].Introduccion["categoria"]="historia";
+arreglo[i].Introduccion["pais"]="9";
+arreglo[i].Introduccion["descripcionBreve"]= arreglo[i].Introduccion["value"];
+delete arreglo[i].Introduccion.value;
+arreglo[i].Introduccion["link"]="es.wikipedia.org";
+arreglo[i].Introduccion["imagen"]="imagen.jpg";
+arreglo[i].Introduccion["ponderacion"]= ""+Math.floor((Math.random()*9)+0)+""; //asigna ponderación arbitraria entre 0 y 9
+//arreglo[i].Introduccion.value="descripcionBreve";
+
+
+
+};
+
+var arreglo2=[];
+for(var i=0; i<arreglo.length; i++){
+    arreglo2.push(arreglo[i].Introduccion);
+
+};
+
+
+
+var jsonText =JSON.stringify(arreglo2);
+document.write(jsonText);
+});
+   </script>
+   <script type="text/javascript"> //script que le asigna formato a una fecha
+   
+   function formatDate(d) {
+
+ var dd = d.getDate()
+ if ( dd < 10 ) dd = '0' + dd
+ var mm = d.getMonth()+1
+ if ( mm < 10 ) mm = '0' + mm
+ var yy = d.getFullYear()
+ if ( yy < 10 ) yy = '0' + yy
+ return dd+'/'+mm+'/'+yy
+}
+   
+   </script>
+   
+   
+   <script type="text/javascript"> //script que genera fechas aleatoreamente
+
+      
+      function getRandomDate(from, to) {
+   if (!from) {
+       from = new Date(1700, 0, 0).getTime();
+   } else {
+       from = from.getTime();
+   }
+   if (!to) {
+       to = new Date(2000, 0, 0).getTime();
+   } else {
+       to = to.getTime();
+   }
+   return new Date(from + Math.random() * (to - from));
+};
+
+
+//document.write(formatDate(getRandomDate()));
+
+
+
+   </script>
+   
+   <script type="text/javascript"> //script que genera la fecha actual
+   
+   var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; 
+
+var yyyy = today.getFullYear();
+if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = dd+'/'+mm+'/'+yyyy;
+
+   
+   
+   </script>
+</head>
+<body>
+<div></div>
+</body>
+</html>
