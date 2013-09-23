@@ -1,0 +1,35 @@
+<html>
+
+	<head>
+ <script type="text/javascript" src="scripts/jquery-2.0.3.js"></script>
+</head>
+<center>
+<body>
+<br/>
+<br/>
+<br/>
+<button id="mybutton">Click Me</button>
+<button id="mybutton2">Click Me to div red</button>
+<br/>
+<br/>
+<br/>
+<div id="mydiv2" style="background-color:red;width:0px;height:200px;"><div id="contenido" style="display:none;">Mi abuela tiene un corderito</div></div>
+<div id="mydiv" style="background-color:blue;width:200px;height:200px;display:none;">ñlkajsdfñlkjasdñlfkjasdñlkjfñl</div>
+<script>
+$("#mybutton").mouseover(function () {
+if ($("div#mydiv").is(":hidden")) {
+$("div#mydiv").slideDown("slow");
+} else {
+$("div#mydiv").hide("fast");
+}
+});
+$("#mybutton2").mouseover(function () {
+$("#mydiv2").animate({
+            "width" : "200px"
+        });$("#contenido").fadeIn("fast");
+});
+ 
+</script>
+</body>
+</center>
+</html>
